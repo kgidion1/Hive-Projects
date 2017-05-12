@@ -15,6 +15,11 @@ use Response;
 class ChurchController extends Controller
 {
     public $uri = 'pages/church';
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function viewChurches()
     {
         //$churches = Church::all();

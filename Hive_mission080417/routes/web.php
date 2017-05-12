@@ -15,22 +15,22 @@ Route::get('/', function () {
     return view('index/homePage');
 });
 
-Auth::routes();
-
-Route::get('home','HomeController@index');
-Route::get('about',function(){
+// Route::get('home','HomeController@index');
+Route::get('/about',function(){
    return view('index/about');
 });
-Route::get('pricing',function(){
+Route::get('/pricing',function(){
     return view('index/pricing');
 });
-Route::get('contact',function(){
+Route::get('/contact',function(){
     return view('index/contact');
 });
 
+Auth::routes();
+
 // ===================== Login Authentication Implemented ==================|
-Route::group(['middleware'=>'auth'],function(){
-    Route::get('dashboard', 'HomeController@index');
+// Route::group(['middleware'=>'auth'],function(){
+    Route::get('/home', 'HomeController@index');
     Route::get('users/viewUsers','HomeController@viewUsers');
     //================= churches logic ======================|
     Route::get('church/viewChurches', 'ChurchController@viewChurches');
@@ -50,4 +50,4 @@ Route::group(['middleware'=>'auth'],function(){
             'uses'=>'MissionerController@createMissioner'
         ]
     );
-});
+// });

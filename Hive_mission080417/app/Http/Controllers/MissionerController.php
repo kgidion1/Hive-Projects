@@ -10,6 +10,11 @@ use Response;
 class MissionerController extends Controller
 {
     public $uri = 'pages/missioners';
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function viewMissioners()
     {
         $missioners = Missioner::all();

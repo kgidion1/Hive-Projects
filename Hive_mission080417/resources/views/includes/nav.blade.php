@@ -6,9 +6,9 @@
         <div class="col-md-8">
             <div class="menu">
                 <a href="/">Home</a>
-                <a href="/index/about">About</a>
-                <a href="/index/pricing">Pricing</a>
-                <a href="/index/contact">Contact</a>
+                <a href="/about">About</a>
+                <a href="/pricing">Pricing</a>
+                <a href="/contact">Contact</a>
             </div>
         </div>
     </div>

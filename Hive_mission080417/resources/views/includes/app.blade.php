@@ -14,6 +14,8 @@
     <meta name="description" content=".">
     <meta name="keywords" content="">
     <meta name="author" content="MISSION MANAGEMENT SYSTEM">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title>Mission Mgnt - Home</title>
     <link rel="apple-touch-icon" sizes="60x60" href="{!! asset('app-assets/images/ico/apple-icon-60.png') !!}">
     <link rel="apple-touch-icon" sizes="76x76" href="{!! asset('app-assets/images/ico/apple-icon-76.png') !!}">
@@ -23,42 +25,42 @@
     <link rel="shortcut icon" type="image/png" href="{!! asset('images.png') !!}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{!! asset('bootstrap-datepicker3.css') !!}" />
+    <link rel="stylesheet" href="{!! asset('css/bootstrap-datepicker3.css') !!}" />
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <!-- BEGIN VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/css/bootstrap.min.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/css/bootstrap.min.css') !!}">
     <!-- font icons-->
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/fonts/icomoon.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/fonts/flag-icon-css/css/flag-icon.min.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/vendors/css/sliders/slick/slick.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/vendors/css/extensions/pace.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/vendors/css/forms/icheck/icheck.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('custom.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/vendors/css/charts/morris.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/vendors/css/extensions/unslider.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/vendors/css/weather-icons/climacons.min.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/fonts/icomoon.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/fonts/flag-icon-css/css/flag-icon.min.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/vendors/css/sliders/slick/slick.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/vendors/css/extensions/pace.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/vendors/css/forms/icheck/icheck.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/custom.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/vendors/css/charts/morris.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/vendors/css/extensions/unslider.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/vendors/css/weather-icons/climacons.min.css') !!}">
     <!-- END VENDOR CSS-->
     <!-- BEGIN ROBUST CSS-->
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/css/bootstrap-extended.min.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset(' app-assets/css/app.min.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/css/colors.min.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('assets/css/style.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('custom.css') !!}">
-
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/css/bootstrap-extended.min.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/css/app.min.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/css/colors.min.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/assets/css/style.css') !!}">
     <!-- END ROBUST CSS-->
+
     <!-- BEGIN Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/css/core/menu/menu-types/horizontal-top-icon-menu.min.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/css/core/menu/menu-types/vertical-overlay-menu.min.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/css/core/colors/palette-climacon.min.css') !!}">
-    <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/css/pages/users.min.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/css/core/menu/menu-types/horizontal-top-icon-menu.min.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/css/core/menu/menu-types/vertical-overlay-menu.min.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/css/core/colors/palette-climacon.min.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/app-assets/css/pages/users.min.css') !!}">
     <!-- END Page Level CSS-->
+
     <!-- BEGIN Custom CSS-->
     <link rel="stylesheet" type="text/css" href="{!! asset('assets/css/style.css') !!}">
-    <link rel="stylesheet" href="{!! asset('bower_components/sweetalert2/dist/sweetalert2.min.css') !!}">
+    <link rel="stylesheet" href="{!! asset('css/bower_components/sweetalert2/dist/sweetalert2.min.css') !!}">
     <!-- for IE support -->
-    <script src="{!! asset('bower_components/es6-promise/es6-promise.auto.min.js') !!}"></script>
-    <script src="{!! asset('bower_components/sweetalert2/dist/sweetalert2.min.js') !!}"></script>
+    <script src="{!! asset('js/bower_components/es6-promise/es6-promise.auto.min.js') !!}"></script>
+    <script src="{!! asset('js/bower_components/sweetalert2/dist/sweetalert2.min.js') !!}"></script>
 
     <!-- END Custom CSS-->
 
@@ -87,7 +89,7 @@
                 <div id="navbar-mobile" class="collapse navbar-toggleable-sm">
                     <ul class="nav navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link nav-menu-main" href="{{ url('/dashboard') }}"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a>
+                            <a class="nav-link nav-menu-main" href="{{ url('/home') }}"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a>
                         </li>
                         <li class="nav-item"><a class="nav-link nav-menu-main" href="{{ url('/church/viewChurches') }}"><i class="fa fa-book"></i>Churches</a></li>
                         <li class="nav-item"><a class="nav-link nav-menu-main" href="{{ url('/missioners/viewMissioners') }}"><i class="fa fa-users"></i>Missioners</a></li>
@@ -100,17 +102,28 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav float-xs-right">
-                        <li class="dropdown dropdown-user nav-item">
-                            <a href="#" data-toggle="dropdown" class="nav-link dropdown-user-link">
-                                <span class="avatar avatar-online">
-                                    <img src="{!! asset('app-assets/images/portrait/small/avatar-s-10.png') !!}" alt="avatar"><i></i>
-                                </span>
-                                <span class="user-name">John Doe</span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a href="#" class="dropdown-item"><i class="fa fa-sign-out"></i> Logout</a>
-                            </div>
-                        </li>
+                        @if (Auth::guest())
+                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a href="{{ url('/register') }}">Register</a></li>
+                        @else    
+                            <li class="dropdown dropdown-user nav-item">
+                                <a href="#" data-toggle="dropdown" class="nav-link dropdown-user-link">
+                                    <span class="avatar avatar-online">
+                                        <img src="{!! asset('app-assets/images/portrait/small/avatar-s-10.png') !!}" alt="avatar"><i></i>
+                                    </span>
+                                    <span class="user-name">{{ Auth::user()->username }}</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="{{ url('/logout') }}" class="dropdown-item" onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">
+                                        <i class="fa fa-sign-out"></i> Logout
+                                    </a>
+                                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
+                                </div>
+                            </li>
+                        @endif    
                     </ul>
                 </div>
             </div>
@@ -128,37 +141,37 @@
     <!-- BEGIN VENDOR JS-->
     <!-- build:js app-assets/js/vendors.min.js-->
     <!-- <script src="app-assets/js/core/libraries/jquery.min.js" type="text/javascript"></script> -->
-    <script type="text/javascript" src="{!! asset('jquery.js') !!}" ></script>
-    <script src="{!! asset('app-assets/js/core/libraries/bootstrap.min.js') !!}" type="text/javascript"></script>
-    <script src="{!! asset('app-assets/vendors/js/ui/tether.min.js') !!}" type="text/javascript"></script>
-    <script src="{!! asset('app-assets/vendors/js/ui/perfect-scrollbar.jquery.min.js') !!}" type="text/javascript"></script>
-    <script src="{!! asset('app-assets/vendors/js/ui/unison.min.js') !!}" type="text/javascript"></script>
-    <script src="{!! asset('app-assets/vendors/js/ui/jquery.matchHeight-min.js') !!}" type="text/javascript"></script>
-    <script src="{!! asset('app-assets/vendors/js/extensions/pace.min.js') !!}" type="text/javascript"></script>
+    <script type="text/javascript" src="{!! asset('js/jquery.js') !!}" ></script>
+    <script src="{!! asset('js/app-assets/js/core/libraries/bootstrap.min.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/app-assets/vendors/js/ui/tether.min.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/app-assets/vendors/js/ui/perfect-scrollbar.jquery.min.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/app-assets/vendors/js/ui/unison.min.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/app-assets/vendors/js/ui/jquery.matchHeight-min.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/app-assets/vendors/js/extensions/pace.min.js') !!}" type="text/javascript"></script>
     <!-- /build-->
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script type="text/javascript" src="{!! asset('app-assets/vendors/js/ui/jquery.sticky.js') !!}"></script>
-    <script type="text/javascript" src="{!! asset('app-assets/vendors/js/charts/jquery.sparkline.min.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('js/app-assets/vendors/js/ui/jquery.sticky.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('js/app-assets/vendors/js/charts/jquery.sparkline.min.js') !!}"></script>
     <!-- <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBDkKetQwosod2SZ7ZGCpxuJdxY3kxo5Po" type="text/javascript"></script> -->
-    <script src="{!! asset('app-assets/vendors/js/charts/gmaps.min.js') !!}" type="text/javascript"></script>
-    <script src="{!! asset('app-assets/vendors/js/forms/icheck/icheck.min.js') !!}" type="text/javascript"></script>
-    <script src="{!! asset('app-assets/vendors/js/extensions/jquery.knob.min.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/app-assets/vendors/js/charts/gmaps.min.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/app-assets/vendors/js/forms/icheck/icheck.min.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/app-assets/vendors/js/extensions/jquery.knob.min.js') !!}" type="text/javascript"></script>
 
-    <script src="{!! asset('app-assets/vendors/js/extensions/unslider-min.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/app-assets/vendors/js/extensions/unslider-min.js') !!}" type="text/javascript"></script>
 
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN ROBUST JS-->
     <!-- build:js app-assets/js/app.min.js-->
-    <script src="{!! asset('app-assets/js/core/app-menu.js') !!}" type="text/javascript"></script>
-    <script src="{!! asset('app-assets/js/core/app.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/app-assets/js/core/app-menu.js') !!}" type="text/javascript"></script>
+    <script src="{!! asset('js/app-assets/js/core/app.js') !!}" type="text/javascript"></script>
 
     <!-- /build-->
     <!-- END ROBUST JS-->
     <!-- BEGIN PAGE LEVEL JS-->
 
-    <script src="{!! asset('app-assets/js/scripts/pages/dashboard-fitness.min.js') !!}" type="text/javascript"></script>
-    <script type="text/javascript" src="{!! asset('bootstrap-datepicker.min.js') !!}" ></script>
+    <script src="{!! asset('js/app-assets/js/scripts/pages/dashboard-fitness.min.js') !!}" type="text/javascript"></script>
+    <script type="text/javascript" src="{!! asset('js/bootstrap-datepicker.min.js') !!}" ></script>
 
 
     <!-- END PAGE LEVEL JS-->

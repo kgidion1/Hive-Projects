@@ -17,12 +17,12 @@
     <!-- Bootstrap CSS -->
     <link rel="shortcut icon" type="image/x-icon" href="{!! asset('images.png') !!}">
     <link rel="stylesheet" href="{!! asset('css/bootstrap.min.css') !!}" type="text/css"/>
-    <link rel="stylesheet" href="{!! asset('datepicker/css/bootstrap-datepicker3.css') !!}"/>
-    <link rel="stylesheet" href="{!! asset('index_custom.css') !!} " type="text/css" />
+    <link rel="stylesheet" href="{!! asset('css/datepicker/css/bootstrap-datepicker3.css') !!}"/>
+    <link rel="stylesheet" href="{!! asset('css/index_custom.css') !!} " type="text/css" />
     <link rel="stylesheet" href="{!! asset('css/text-color.css') !!} " type="text/css" />
     <!-- <link rel="stylesheet" href="css/inputs.css" type="text/css" /> -->
     <link rel="stylesheet" href="{!! asset('css/font-awesome.min.css') !!} " type="text/css" />
-    <link rel="stylesheet" type="text/css" href="{!! asset('sweetalerts/sweetalert.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('css/sweetalerts/sweetalert.css') !!}">
 </head>
 
 <body>
@@ -54,9 +54,9 @@
     <script src="{!! asset('js/bootstrap.js') !!}" type="text/javascript"></script>
     <script src="{!! asset('js/validate.js?v=449990')!!}" type="text/javascript"></script>
     <script src="{!! asset('js/moment.min.js?v=449') !!}" type="text/javascript"></script>
-    <script src="datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="{!! asset('js/datepicker/js/bootstrap-datepicker.min.js') !!}"></script>
     <script src="{!! asset('js/custom.js?v=9992') !!}" type="text/javascript"></script>
-    <script src="{!! asset('sweetalerts/sweetalert.min.js') !!}"></script>
+    <script src="{!! asset('js/sweetalerts/sweetalert.min.js') !!}"></script>
 
 </body>
 

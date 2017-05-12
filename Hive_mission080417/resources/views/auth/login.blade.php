@@ -4,15 +4,25 @@
     <form role="form" method="POST" action="{{ url('/login') }}">
         {{ csrf_field() }}
 
-        <div class="form-group">
+        <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
             <input id="username" type="text" placeholder="username" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
+            @if ($errors->has('username'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('username') }}</strong>
+                </span>
+            @endif
         </div>
-        <div class="form-group">
+        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
             <input id="password" placeholder="password" type="password" class="form-control" name="password" required>
+            @if ($errors->has('password'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('password') }}</strong>
+                </span>
+            @endif
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-outline-primary"> Login </button><br/>
-            <a class="btn btn-link" href="{{ route('password.request') }}">
+            <a class="btn btn-link" href="{{ url('/password/reset') }}">
                 Forgot Your Password?
             </a>
         </div>

@@ -106,7 +106,7 @@
                 <h5 class="light ">Online,Church, Missioners  Management System</h5>
                  <h2 class="light ">Less Paper Work, More productivity</h2>
                  <br/>
-                 <a class="btn btn-primary" href="about.blade.php">Learn More <i class="fa fa-angle-right"></i></a>
+                 <a class="btn btn-primary" href="/about">Learn More <i class="fa fa-angle-right"></i></a>
                 <!--  <a class="btn btn-success" href="?v=signup">Create Account</a> -->
                  <div class="row"> </div>
 	        </div>
