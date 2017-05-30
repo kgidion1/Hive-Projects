@@ -31,10 +31,4 @@
         <span>&copy;<?php echo date("Y");?> Hive Technologies Ltd</span>
     </div>
 </div>
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</div>--}}
-
-{{--@endsection--}}
+              
